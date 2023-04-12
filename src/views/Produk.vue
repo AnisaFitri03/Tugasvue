@@ -3,82 +3,63 @@
   
     </div>
   
-    <center>  <h3>Perhiasan</h3>
+    <h3>Produk</h3>
       <table >
         <tr>
-          <th>kalung</th>
-          <th>cincin </th>
-          <th>gelang tangan</th>
-          <th>gelang kaki</th>
-          <th>anting-anting</th>
-          <th>berlian</th>
+          <th>Perhiasan Emas</th>
+          <th>Ukuran</th>
         </tr>
-  
-  
         <tr>
-          <td><img src="https://ubslifestyle.com/wp-content/uploads/2020/01/KGV5544_A.jpg" alt="gelang" style="width:200px;height:220px;" /></td>
-          <td align="center">gelang</td>
-  
-          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            <option disabled value="">Pilih Perhiasan</option>
-            <option>10,6cm</option>
-            <option>13,9cm</option>
-            <option>16cm</option>
-            <option>20cm</option>
-          </select></td>
-  
-          <td><img src="https://ubslifestyle.com/wp-content/uploads/2022/12/KKV14022_A1.jpg" alt="kalung" style="width:200px;height:220px"/> </td>
-          <td align="center">kalung</td>
-  
-          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            <option disabled value="">Pilih perhiasan</option>
-            <option>36cm</option>
-            <option>40cm</option>
-            <option>50cm</option>
-            <option>55cm</option>
-          </select></td>
+          <td>Kalung</td>
+          <td>50CM</td>
         </tr>
-  
         <tr>
-          <td><img src="https://vncojewellery.com/artikel/wp-content/uploads/2020/08/Apa-Itu-Cincin-Listring.jpg" alt="cinin" style="width:200px;height:220px;" /></td>
-          <td>cincin anak-dewasa</td>
-          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                <option disabled value="">cincin</option>
-                <option>7cm</option>
-                <option>10cm</option>
-                <option>17cm</option>
-                <option>25cm</option>
-              </select></td>
-              
-          <td><img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/11/18/1d47465b-4716-4a73-878a-27c58742b33c.jpg" alt="anting-anting" style="width:200px;height:220px"/> </td>
-          <td align="center">anting-anting</td>
-  
-          <td><select class="form-select form-select-sm" aria-label=".form-select-sm example">
-            <option disabled value="">Pilih perhisan</option>
-            <option>12mm</option>
-            <option>15mm</option>
-            <option>18mm</option>
-            <option>20mm</option>
-          </select></td>
+          <td>Gelang</td>
+          <td>17cm</td>
         </tr>
-  
+        <tr>
+          <td>cincin</td>
+          <td>13,5cm</td>
+        </tr>
       </table>
-  
-      <div>
-        <a href="https://shopee.co.id/search?keyword=baju%20kaos" target="_blank">Lebih lengkap nya klik disni</a>
-      </div>
-  
-      <span>Keritik dan saran untuk toko kami:</span>
-      <p style="white-space: pre-line;">{{ pesan }}</p>
       <br>
+      <table >
+        <tr>
+          <th>Persiasan Berlian</th>
+          <th>ukuran</th>
+        </tr>
+        <tr>
+          <td>Cincin permata</td>
+          <td>15cm</td>
+        </tr>
+        <tr>
+          <td>Kalung permata</td>
+          <td>45cm</td>
+        </tr>
+        <tr>
+          <td>anting-anting</td>
+          <td>10mm</td>
+        </tr>
+        <tr>
+          <td>Gelang permata</td>
+          <td>17cm</td>
+        </tr>
+      </table>
+  <br>
+    <br>
+      <div>
+        <h6>Untuk Harga Perhisan dan Berlian silahkan kunjungi
+          <a href="https://elegance.co.id/wp-content/uploads/2020/03/toko-berlian-jakarta.jpeg">Perhiasan</a>
+        </h6>
+      </div>
+  <br>
+      <span>Kritik dan saran untuk toko kami:</span>
+      <p style="white-space: pre-line;">{{ pesan }}</p>
       <textarea v-model="pesan" placeholder="Kirim pesan" ></textarea>
-      <h6>
-        Tentang Kami
-      </h6>
       <p>
-        Toko mas kami menawarkan transaksi jual beli online yang menyenangkan, gratis, dan terpercaya. Dan berbelanja berbagai perhisan menarik kapan saja. Keamanan transaksi kamu terjamin.. Ayo untuk berbelanja dan menyenangkan diri!!
+  
       </p>
-    </center>
+  
   
   
   </template>
@@ -95,7 +76,15 @@
     border:2px solid #dfa852;}
   
   </style>
+  <style>
+  form {margin-top: 1%;}
+  body  {
+    background-size: cover;
+    background-image: url('/bg ayam.jpg');
+    background-color: #cccccc;
   
+  }
+  </style>
   <style>
   body {
     font-size: 20px;
