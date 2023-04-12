@@ -1,35 +1,98 @@
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import Header from './components/Header.vue'
+</script>
+
 <template>
-  <ul>
-    <li><router-link class ="active" to="/">Home</router-link></li>
-  </ul>
+  <header>
+
+    <div class="wrapper"> 
+      <img src="https://logammuliajewelry.com/Images/WizardContent/Wiz-202203/741/jual-cincin-berlian.jpg" alt="Logo" style="width:100px;height:100px;"/>
+      <Header  msg="PERHISAN"/>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/produk">Produk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
 </template>
 
 <style scoped>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+header {
+  line-height: 1.5;
+  max-height: 100vh;
 }
 
-li {
-  float: left;
-}
-
-li a {
+.logo {
   display: block;
-  color: white;
+  margin: 0 auto 2rem;
+}
+
+nav {
+  width: 100%;
+  font-size: 12px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  margin-top: 2rem;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+nav a.router-link-exact-active {
+  color: var(--color-text);
 }
 
-.active {
-  background-color: #04AA6D;
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    text-align: left;
+    margin-left: -1rem;
+    font-size: 1rem;
+
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
 }
 </style>
